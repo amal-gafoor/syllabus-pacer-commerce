@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+build/
+
+.env
+.env.local
+.env*.local
+
+# The workbook carries internal teacher names in the chapter titles — the
+# generated curriculum in lib/curriculum/ is committed instead.
+textbooks/
+
+.DS_Store
+*.log
