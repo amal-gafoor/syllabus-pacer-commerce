@@ -33,6 +33,7 @@ const SUBMISSION_HEADERS = [
   "Start", "Finish by", "Weekly offs", "Extra leave",
   "Chapters", "Total pages", "Pages/day", "Projected finish", "Chapter list",
   "Total topics", "Topics/day",
+  "Stream", // which pacer sent the row (Humanities, Commerce, CBSE, …)
 ];
 
 /** POST → append one plan submission as a new row. */
@@ -64,6 +65,7 @@ function doPost(e) {
       (data.chapters || []).join("; "),
       data.totalTopics || 0,
       data.topicsPerDay || "",
+      data.stream || "",
     ]);
     return json({ ok: true });
   } catch (err) {
