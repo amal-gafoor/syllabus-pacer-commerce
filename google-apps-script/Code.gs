@@ -1,5 +1,5 @@
 /**
- * Time Table Creator — Google Sheets bridge
+ * Syllabus Pacer – Commerce — Google Sheets bridge
  * ------------------------------------------------------------------
  * Appends each generated plan (identified by EPSID) as a new row.
  *
